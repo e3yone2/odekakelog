@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+body {
+  background-color: rgb(221, 244, 251); 
+}
+
+/*login.jsp*/
+h1 {
+    color: cornflowerblue;
+    text-align:center;
+    font-family: sans-serif;
+}
+
+.fuwafuwa {
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(img/cloud.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
+ 
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+
+.fuwafuwa2 {
+  right: 0;
+  position: fixed;
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(img/cloud.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
+ 
+@keyframes fuwafuwa2 {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+
+
+   
+   
+.login-box{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.login{
+	position:relative;
+	text-align: center;
+	padding : 20px;
+	
+}
+
+.legisteruser{
+	position:relative;
+	text-align: center;
+	
+}
+
+/*registerAccount.jsp*/
+
+.box-register p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.table-register{
+	display: flex;
+	justify-content: center;	
+}
+#button-rg{
+	position: relative;
+	left:2em ;
+}
+
+/*loginOK.jsp*/
+.welcome{
+	text-align: center;
+	color:darkslategrey;
+	font-family:sans-serif;
+	font-size: small;
+	
+	
+}
+
+#logout{
+	position :absolute;
+	top :20px;
+	right: 30px;
+}
+
+.locationbutton{
+	text-align: center;
+}
+
+.errorMsg-r{
+	display: flex;
+	justify-content: center;	
+	text-align: center;
+}
+
+
+/*過去ログのボックス*/
+.box-logs {
+	margin-top: 4%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom:10%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+    background: #dcefff;
+}
+.box-logs .box-title {
+    font-size: 0.9em;
+    background: #5fb3f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.inside-table {
+	display: flex;
+	justify-content: center;
+	padding: 4px;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+ 	font-size: 11px;
+	background:white;
+	width: 100%;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+.errorMsg-l{
+	text-align: center;
+}
+
+.Msg-l{
+	text-align: center;
+}
+
+.dateform{
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 11px;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 2px 17px;   /* 余白       */
+  background    : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid rgba(26, 26, 255, 0.77);    /* 枠の指定 */
+}
+.dateform:hover {
+  color         : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.location-button{
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 11px;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 2px 17px;   /* 余白       */
+  background    : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid rgba(26, 26, 255, 0.77);    /* 枠の指定 */
+}
+.location-button:hover {
+  color         : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.text-button{
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 11px;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 2px 17px;   /* 余白       */
+  background    : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid rgba(26, 26, 255, 0.77);    /* 枠の指定 */
+}
+.text-button:hover {
+  color         : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+	
+
+.img-button{ 
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 11px;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 2px 17px;   /* 余白       */
+  background    : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid rgba(26, 26, 255, 0.77);    /* 枠の指定 */
+}
+.img-button:hover {
+  color         : rgba(26, 26, 255, 0.77);     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+.delete-button{
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 12px;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 4px 17px;   /* 余白       */
+  background    : rgba(102, 102, 255, 0.77);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid rgba(102, 102, 255, 0.77);    /* 枠の指定 */
+}
+.delete-button:hover {
+  color         : rgba(102, 102, 255, 0.77);     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
